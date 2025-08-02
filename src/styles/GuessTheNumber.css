@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.game-container {
+  width: 360px;
+  padding: 35px 30px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.game-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.game-input {
+  width: 85%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.game-input::placeholder {
+  color: #ccc;
+}
+
+.game-input:focus {
+  box-shadow: 0 0 8px #8f94fb;
+}
+
+.game-button,
+.reset-button {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 5px;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-button:hover,
+.reset-button:hover {
+  background: linear-gradient(135deg, #5f72be, #9b23ea);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(155, 35, 234, 0.4);
+}
+
+.game-message {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 30px;
+}
+
+.game-message.info {
+  color: #d6d6ff;
+}
+
+.game-message.Success {
+  color: #00ffae;
+  font-weight: bold;
+  text-shadow: 0 0 12px #00ffae;
+}
+
+.game-message.failure {
+  color: #ff5e7e;
+  font-weight: bold;
+  text-shadow: 0 0 12px #ff5e7e;
+}
+
+.game-starts p {
+  font-size: 14px;
+  color: #eee;
+  margin-top: 10px;
+}
